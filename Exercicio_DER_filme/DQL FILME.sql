@@ -1,0 +1,5 @@
+--DQL  DATA QUERY LANGUAGE
+
+SELECT * FROM Genero;
+
+SELECT * FROM Filme;
