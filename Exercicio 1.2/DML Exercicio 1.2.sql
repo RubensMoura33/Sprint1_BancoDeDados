@@ -14,6 +14,10 @@ INSERT INTO Marca (NomeMarca)
 VALUES ('BMW')
 
 INSERT INTO Cliente (Nome, CPF)
-VALUES ('Rubens','66578443010').
+VALUES ('Rubens','66578443010')
 
-INSERT INTO Veiculo ()
+INSERT INTO Veiculo (IdEmpresa, IdModelo, IdMarca, Placa)
+VALUES (1, 1, 1, 'NER-9693')
+
+INSERT INTO Aluguel (IdVeiculo, IdCliente, DataRetirada, DataDevolucao)
+VALUES (1, 1, '20/04/2023', '05/05/2023')
