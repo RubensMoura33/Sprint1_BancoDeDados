@@ -36,7 +36,13 @@ CREATE TABLE Clinica
 	 Nome VARCHAR (50)NOT NULL,
 	 DataNascimento VARCHAR(10)NOT NULL)
 
+	 CREATE TABLE Atendimento
+	 (IdAtendimento INT PRIMARY KEY IDENTITY,
+	  IdVeterinario INT FOREIGN KEY REFERENCES Veterinario (IdVeterinario),
+	  IdPet INT FOREIGN KEY REFERENCES Pet (IdPet),
+	  Descricao VARCHAR(100)NOT NULL,
+	  [Data] VARCHAR(10)NOT NULL)
 
 
 
-	 SELECT*FROM Pet
+       SELECT*FROM Atendimento;
